@@ -11,11 +11,7 @@ problem:
 
 solution:
 1. Since public api's don't offer realtime price we need to scrape it from some websites which provides live proce details.
-<<<<<<< HEAD
     a. done. url example: http://127.0.0.1:3000/currentprice?name=hcl
-=======
-    a. done.
->>>>>>> origin/master
     b. YTD.
     c. YTD.
 2. Let's use socket.io for notification.
