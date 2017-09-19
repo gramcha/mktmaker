@@ -5,8 +5,8 @@ var eachOfSeries = require('async/eachOfSeries');
 var request = require('request');
 var cheerio = require('cheerio');
 
-const livePriceRepo = require('./dbutils/live-price-repo');
-const utils = require('./utils');
+const livePriceRepo = require('../dbutils/live-price-repo');
+const utils = require('../utils');
 var HashMap = require('hashmap');
 
 var urlMap = new HashMap();
@@ -134,6 +134,7 @@ function getPriceFromSpecificUrl(stockSource, dupelist, priceList, done) {
 function getHtmlResponse(bodyString) {
     return "<html><body><p>" + bodyString + "</p></body></html>";
 }
+
 let getCurrentPrice = function (stockName, callback) {
     let stockSource = getStockSource(stockName);
     let resultUrl = stockSource.link_src;

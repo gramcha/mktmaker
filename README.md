@@ -11,9 +11,14 @@ problem:
 
 solution:
 1. Since public api's don't offer realtime price we need to scrape it from some websites which provides live proce details.
-    a. done. url example: http://127.0.0.1:3000/currentprice?name=hcl
+    a. done. url example: http://127.0.0.1:3000/currentprice/suggest?name=hcl
     b. YTD.
     c. YTD.
 2. Let's use socket.io for notification.
 3. Simulating buy, sell need to defined in more details.
 4. YTD.
+
+
+API:
+1. GET - pass paritial name of the stock. Example: http://127.0.0.1:3000/currentprice/suggest?name=ved
+2. GET - full name of the stock. Example: http://127.0.0.1:3000/currentprice/stock?name=Vedanta
